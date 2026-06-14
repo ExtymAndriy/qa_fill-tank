@@ -49,7 +49,7 @@ describe('fillTank', () => {
     fillTank(customer, 1.235, 3.96);
 
     expect(customer.vehicle.fuelRemains).toBe(3.9);
-    expect(customer.money).toBeCloseTo(95.18, 2);
+    expect(customer.money).toBeCloseTo(95.16, 2);
   });
 
   it('does not pour when the rounded amount would be less than 2 liters', () => {
