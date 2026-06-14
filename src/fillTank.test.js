@@ -40,7 +40,7 @@ describe('fillTank', () => {
     expect(customer.money).toBe(0);
   });
 
-  it('rounds poured fuel down to one decimal and rounds price to two decimals', () => {
+  it('rounds poured fuel down to one decimal and rounds total purchase price to two decimals', () => {
     const customer = {
       money: 100,
       vehicle: { maxTankCapacity: 40, fuelRemains: 0 },
